@@ -2,7 +2,7 @@ import { createContext, useState, ReactNode, useEffect } from 'react';
 import Cookies from 'js-cookie';
 
 import challenges from '../../challenges.json';
-import { LevelUpModalo } from '../pages/components/LevelUpModal';
+import { LevelUpModalo } from '../components/LevelUpModal';
 
 
 
@@ -107,7 +107,7 @@ export function ChallengesProvider ({
     return (
         <ChallengesContext.Provider 
             value={{ 
-                level, 
+                level,
                 currentExperience, 
                 experienceToNextLevel,
                 challengesCompleted, 
